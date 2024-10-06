@@ -33,7 +33,7 @@ This Python script calculates the diversity of multiple populations (based on He
 
 ### 1. Reading Data
 
-Ensure your population frequency data is in CSV format and located in the appropriate directory. By default, the script looks for a file named `test_example.csv`. You can specify a different file path if needed.
+Ensure your population frequency data is in CSV format and located in the appropriate directory. By default, the script looks for a file named `test_example.csv`. You can specify a different file path if needed. 
 
 ```python
 # Example usage
@@ -68,6 +68,11 @@ Perform a brute force analysis to calculate diversity measures for all possible 
 brute_force_all_HETandSSD(pop_freqs=d, k=2, save_file_as='output.csv')
 ```
 
-## Acknowledgements
+## Data Source
 
-- The developer of this script is Niloufar Abhari.
+The dataset used in this project is from the paper:
+
+- Moore et al., "Conservation genomics of anadromous Atlantic salmon across its North American range: outlier loci identify the same patterns of population structure as neutral loci
+," *Molecular Ecology*, 2014. [Link to Paper]( https://doi.org/10.1111/mec.12972)
+
+The data includes the allele frequency of multiple loci in 50 Atlantic salmon populations.
