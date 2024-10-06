@@ -219,6 +219,7 @@ start_time = time.time()
 ############################################### LOAD DATA #########################################
 
 d = load_frequencies()
+# d = load_frequencies('Atlantic-salmon-ONEfreqs_perPop.csv') #uncomment if you want read the Atlantic salmon data
 
 ##################################### BRUTE_FORCE ##################################################
 
