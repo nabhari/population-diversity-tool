@@ -70,7 +70,7 @@ brute_force_all_HETandSSD(pop_freqs=d, k=2, save_file_as='output.csv')
 
 ## Data Source
 
-The original VCF files used in this project is from the paper:
+The original VCF files used in this project are from the paper:
 
 - Moore et al., "Conservation genomics of anadromous Atlantic salmon across its North American range: outlier loci identify the same patterns of population structure as neutral loci
 ," *Molecular Ecology*, 2014. [Link to Paper]( https://doi.org/10.1111/mec.12972)
@@ -82,7 +82,7 @@ The analyzed data includes the allele frequency of multiple loci in 50 Atlantic 
 This project is licensed under the Apache License 2.0. Users of this code must cite both the repository and the paper as follows:
 
 - Repository: [population-diversity-tool](https://github.com/nabhari/population-diversity-tool)
-- Paper: [Measuring  Genetic Diversity Across Populations], [Niloufar Abhari, Caroline Colijn, Arne Mooers, Paul Tupper], [under review].
+- Paper: Abhari et al., Measuring  Genetic Diversity Across Populations, 2024 [under review].
 
-See the [LICENSE]([LICENSE](http://www.apache.org/licenses/LICENSE-2.0) file for more details.
+See the [LICENSE](http://www.apache.org/licenses/LICENSE-2.0) file for more details.
 
