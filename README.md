@@ -1,7 +1,7 @@
 
 # Population Diversity Analysis Tool
 
-This Python script calculates the diversity of multiple populations (based on Heterozygosity and SSD) and generates correlation plots for allele frequency data. It includes functions for calculating diversity measures: pairwise differencing, pooling, averaging, fixing, and correlation plots.
+This Python script calculates the diversity of multiple populations (based on Heterozygosity and SSD) and generates correlation plots for allele frequency data. It includes functions for calculating population-level diversity measures: pairwise differencing, pooling, averaging, and fixing.
 
 ## Features
 
