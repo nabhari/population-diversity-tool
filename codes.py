@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #author: Niloufar Abhari 
+#Licensed under the Apache License 2.0
 
 import numpy as np
 import pandas as pd
@@ -210,25 +211,18 @@ def brute_force_all_HETandSSD(pop_freqs, k=2, save_file_as='brute_force_output.c
     df.to_csv(save_file_as)
     return df
 
+def main_():
+    d = load_frequencies()
+    # d = load_frequencies('Atlantic-salmon-ONEfreqs_perPop.csv') #uncomment if you want read the Atlantic salmon data    
+    brute_force_all_HETandSSD(pop_freqs=d, k=2, save_file_as = 'test_example__k2_output.csv')
+    scatter_plots_all_pairs(k=2,path_df='test_example__k2_output.csv', col_index='Unnamed: 0')
 
-################################################# RUN #############################################
+################################################# RUN ##################
 
 #Measure the runtime of the code
 start_time = time.time()
 
-############################################### LOAD DATA #########################################
-
-d = load_frequencies()
-# d = load_frequencies('Atlantic-salmon-ONEfreqs_perPop.csv') #uncomment if you want read the Atlantic salmon data
-
-##################################### BRUTE_FORCE ##################################################
-
-brute_force_all_HETandSSD(pop_freqs=d, k=2, save_file_as = 'test_example__k2_output.csv')
-
-################################### CORRELATION PLOTS ############################################
-
-scatter_plots_all_pairs(k=2,path_df='test_example__k2_output.csv', col_index='Unnamed: 0')
-
+main_()
 ###########################################RunTime######################
 # Print the runtime of the code
 end_time = time.time()
