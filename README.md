@@ -5,14 +5,14 @@ This Python script calculates the diversity of multiple populations (based on He
 
 ## Features
 
-- **Reading Data:** Load population frequency data from a CSV file.
+- **Reading Data:** Load population frequency data from a CSV file. Each row corresponds to a population and each column is the allele frequency of a single locus.
 - **Correlation Plots:** Generate scatter plots showing the correlation of all pairs of measures for population sets of specified sizes k.
 - **Diversity Measures:**
   - Het (Heterozygosity) and SSD (Split System Diversity) calculated through various methods:
-    - Pairwise Differencing
-    - Pooling
-    - Averaging
-    - Fixing
+    - Pooling: all populations of a given set of size k are pooled together and treated as a single population.
+    - Averaging: the diversity is calculated within each population in the set and then the average diversity is calculated.
+    - Pairwise Differencing: the average pairwise differences of allele frequencies are calculated for all pairs of populations in the set.
+    - Fixing: pooled diversity is calculated after fixation.
 - **Brute Force Analysis:** Calculate diversity measures for all possible combinations of population sets of a specified size k.
 
 ## Requirements
@@ -70,9 +70,9 @@ brute_force_all_HETandSSD(pop_freqs=d, k=2, save_file_as='output.csv')
 
 ## Data Source
 
-The dataset used in this project is from the paper:
+The original VCF files used in this project is from the paper:
 
 - Moore et al., "Conservation genomics of anadromous Atlantic salmon across its North American range: outlier loci identify the same patterns of population structure as neutral loci
 ," *Molecular Ecology*, 2014. [Link to Paper]( https://doi.org/10.1111/mec.12972)
 
-The data includes the allele frequency of multiple loci in 50 Atlantic salmon populations.
+The analyzed data includes the allele frequency of multiple loci in 50 Atlantic salmon populations.
